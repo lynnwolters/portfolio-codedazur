@@ -1,0 +1,18 @@
+.reel {
+    height: 100vh;
+
+    grid-column: 1/13;
+
+    padding: var(--gap);
+}
+
+.reel__container {
+    top: 0;
+    transform: translateY(-25%);
+}
+
+.reel__container-content {
+    width: 100%;
+
+    border-radius: var(--border-radius-m);
+}

@@ -1,0 +1,63 @@
+.about {
+    grid-column: 2/12;
+
+    padding: var(--gap);
+}
+
+.about__title {
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: var(--font-size-l);
+    line-height: var(--line-height-normal); 
+    text-align: center;
+}
+
+.about__description {
+    display: grid;
+    grid-template-columns: var(--grid-template-columns);
+    gap: var(--gap);
+}
+
+.about__description-title {
+    grid-column: 1/8;
+
+    font-size: var(--font-size-m);
+    line-height: var(--line-height-120); 
+}
+
+.about__description-paragraph {
+    grid-column: 6/13;
+
+    margin: 8rem 0 8rem 0;
+
+    font-size: var(--font-size-m);
+    line-height: var(--line-height-120); 
+    color: var(--light-grey);
+}
+
+.about__experience-title {
+    font-size: var(--font-size-m);
+}
+
+.about__experience-list {
+    margin: 4rem 0 8rem 0;
+}
+
+.about__experience-list-item {
+    display: flex;
+    justify-content: space-between;
+
+    padding: var(--gap) 0;
+
+    border-top: var(--border);
+}
+
+.about__experience-list-item h4 {
+    font-size: var(--font-size-m);
+}
+
+

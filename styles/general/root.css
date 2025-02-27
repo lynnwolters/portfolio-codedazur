@@ -1,0 +1,28 @@
+:root {
+    --grid-template-columns: repeat(12, 1fr);
+    --gap: 1rem;
+
+    --border: solid .08rem var(--light-grey);
+    --border-dark: solid .08rem var(--darkest-grey);
+    --border-radius-m: .5rem;
+    --border-radius-l: 100rem;
+
+    --font-size-s: 1.2rem;
+    --font-size-m: 2rem;
+    --font-size-l: 10rem;
+
+    --line-height-normal: 100%;
+    --line-height-120: 120%;
+    --line-height-130: 130%;
+    --line-height-140: 140%;
+    --line-height-150: 150%;
+
+    --black: rgb(23, 23, 23);
+    --white: rgb(255, 255, 255);
+    --lightest-grey: rgb(249, 249, 249);
+    --light-grey: rgb(219, 219, 219);
+    --dark-grey: rgb(144, 144, 144);
+    --darkest-grey: rgb(77, 77, 77);
+    --yellow: rgb(251, 255, 130);
+    --bg-color: rgb(255, 255, 255);
+}

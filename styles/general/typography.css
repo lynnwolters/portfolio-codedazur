@@ -1,0 +1,13 @@
+@font-face {
+    font-family: "RegestoGrotesk-Regular";
+    src:
+    url("/fonts/RegestoGrotesk-Regular.woff2") format("woff2"),
+    url("/fonts/RegestoGrotesk-Regular.woff") format("woff")
+}
+
+h1, h2, h3, h4, h5, h6, p, li, a, button, span {
+    font-family: "RegestoGrotesk-Regular";
+    font-weight: normal;
+    -webkit-font-smoothing: antialiased;
+    color: var(--black);
+}
