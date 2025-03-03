@@ -1,0 +1,8 @@
+.about-product {
+    height: 100vh;
+
+    grid-column: 2/12;
+
+    padding: var(--gap);
+}
+

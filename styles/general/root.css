@@ -12,12 +12,13 @@
     --font-size-l: 10rem;
 
     --line-height-normal: 100%;
+    --line-height-110: 110%;
     --line-height-120: 120%;
     --line-height-130: 130%;
     --line-height-140: 140%;
     --line-height-150: 150%;
 
-    --black: rgb(15, 15, 15);
+    --black: rgb(0, 0, 0);
     --white: rgb(255, 255, 255);
     --lightest-grey: rgb(249, 249, 249);
     --light-grey: rgb(219, 219, 219);

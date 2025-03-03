@@ -8,7 +8,7 @@ window.addEventListener('scroll', function() {
     }
 })
 
-document.querySelectorAll('.about__experience-list-item-button').forEach(function(button) {
+document.querySelectorAll('.about__experience-list-item-button').forEach(function(button, index) {
     button.addEventListener('click', function() {
         const panel = button.nextElementSibling
 
@@ -25,3 +25,8 @@ document.querySelectorAll('.about__experience-list-item-button').forEach(functio
         }
     })
 })
+
+const firstPanel = document.querySelector('.about__experience-list-item-panel')
+if (firstPanel) {
+    firstPanel.style.maxHeight = firstPanel.scrollHeight + 'px'
+}

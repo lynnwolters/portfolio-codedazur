@@ -1,0 +1,5 @@
+.main-product {
+    display: grid;
+    grid-template-columns: var(--grid-template-columns);
+    gap: var(--gap);
+}

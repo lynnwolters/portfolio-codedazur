@@ -12,16 +12,16 @@
     <nav class="nav">
         <ul class="nav__list">
             <li class="nav__list-item">
-                <a class="nav__list-item-link" href="#">About</a>
+                <a class="nav__list-item-link" href="#about">About</a>
             </li>
             <li class="nav__list-item">
-                <a class="nav__list-item-link" href="#">Work</a>
+                <a class="nav__list-item-link" href="#work">Work</a>
             </li>
             <li class="nav__list-item">
-                <a class="nav__list-item-link" href="#">Services</a>
+                <a class="nav__list-item-link" href="#services">Services</a>
             </li>
             <li class="nav__list-item">
-                <a class="nav__list-item-link" href="#">
+                <a class="nav__list-item-link" href="#contact">
                     Get In Touch
                     <img class="nav__list-item-link--icon" src="./images/arrow.svg" alt="An arrow icon.">
                 </a>
@@ -31,9 +31,9 @@
 
     <header class="header">
         <div class="header__top">
-            <div class="header__top-logo">
-                <img class="header-top-logo-content" src="./images/logo-black.svg" alt="A logo that says 'Lynn Wolters'.">
-            </div>
+            <a class="header__top-logo" href="index.html">
+                <img class="header__top-logo-content" src="./images/logo-black.svg" alt="A logo that says 'Lynn Wolters'.">
+            </a>
             <div class="header__top-tag">
                 <span class="header__top-tag-line">Digital product designer <br> and developer</span>
                 <span class="header__top-tag-line">Based in Amsterdam</span>
@@ -61,7 +61,7 @@
             </div>
         </section>
 
-        <section class="about">
+        <section id="about" class="about">
             <h2 class="about__title">A little info <br> about me</h2>
             <div class="about__description">
                 <h3 class="about__description-title">Ex deleniti architecto vel eveniet fugiat sed galisum vitae est quibusdam sint qui doloribus laudantium est iste voluptatem est similique voluptatibus!</h3>
@@ -72,19 +72,21 @@
                 </p>
             </div>
             <div class="about__experience">
-                <h3 class="about__experience-title">Experience</h3>
+                <h3 class="about__experience-title">
+                    <span class="about__experience-title-content">Experience</span>
+                    <span class="about__experience-title-content">+3 years</span>
+                </h3>
                 <ul class="about__experience-list">
                     <li class="about__experience-list-item">
                         <button class="about__experience-list-item-button">
-                            <h4 class="about__experience-list-item-button-content">code d'azur</h4>
-                            <h4 class="about__experience-list-item-button-content">Function</h4>
-                            <h4 class="about__experience-list-item-button-content">Period</h4>
+                            <h4 class="about__experience-list-item-button-content">Intern development at code d'azur</h4>
+                            <h4 class="about__experience-list-item-button-content">6 Months</h4>
                         </button>
                         <div class="about__experience-list-item-panel">
-                            <a class="about__experience-list-item-panel-link" href="#">
+                            <a class="about__experience-list-item-panel-link" href="https://codedazur.com/" target="_blank">
                                 Website
                                 <div class="about__experience-list-item-panel-link-arrow">
-                                    <img src="./images/arrow-black.svg" alt="An arrow icon.">
+                                    <img src="./images/arrow-dark-grey.svg" alt="An arrow icon.">
                                 </div>
                             </a>
                             <p class="about__experience-list-item-panel-paragraph">
@@ -94,15 +96,14 @@
                     </li>
                     <li class="about__experience-list-item">
                         <button class="about__experience-list-item-button">
-                            <h4 class="about__experience-list-item-button-content">Lama Lama</h4>
-                            <h4 class="about__experience-list-item-button-content">Function</h4>
-                            <h4 class="about__experience-list-item-button-content">Period</h4>
+                            <h4 class="about__experience-list-item-button-content">Student assistent front-end at HvA</h4>
+                            <h4 class="about__experience-list-item-button-content">5 Months</h4>
                         </button>
                         <div class="about__experience-list-item-panel">
-                            <a class="about__experience-list-item-panel-link" href="#">
+                            <a class="about__experience-list-item-panel-link" href="https://www.hva.nl/" target="_blank">
                                 Website
                                 <div class="about__experience-list-item-panel-link-arrow">
-                                    <img src="./images/arrow-black.svg" alt="An arrow icon.">
+                                    <img src="./images/arrow-dark-grey.svg" alt="An arrow icon.">
                                 </div>
                             </a>
                             <p class="about__experience-list-item-panel-paragraph">
@@ -112,15 +113,14 @@
                     </li>
                     <li class="about__experience-list-item">
                         <button class="about__experience-list-item-button">
-                            <h4 class="about__experience-list-item-button-content">Stimmt</h4>
-                            <h4 class="about__experience-list-item-button-content">Function</h4>
-                            <h4 class="about__experience-list-item-button-content">Period</h4>
+                            <h4 class="about__experience-list-item-button-content">Intern digital design and front-end at Lama Lama</h4>
+                            <h4 class="about__experience-list-item-button-content">3 Months</h4>
                         </button>
                         <div class="about__experience-list-item-panel">
-                            <a class="about__experience-list-item-panel-link" href="#">
+                            <a class="about__experience-list-item-panel-link" href="https://lamalama.nl/?gad_source=1&gclid=EAIaIQobChMIq6HTw83uiwMVTgV7Bx2pfxC4EAAYASAAEgIVavD_BwE" target="_blank"> 
                                 Website
                                 <div class="about__experience-list-item-panel-link-arrow">
-                                    <img src="./images/arrow-black.svg" alt="An arrow icon.">
+                                    <img src="./images/arrow-dark-grey.svg" alt="An arrow icon.">
                                 </div>
                             </a>
                             <p class="about__experience-list-item-panel-paragraph">
@@ -130,15 +130,14 @@
                     </li>
                     <li class="about__experience-list-item">
                         <button class="about__experience-list-item-button">
-                            <h4 class="about__experience-list-item-button-content">Nerds and Company</h4>
-                            <h4 class="about__experience-list-item-button-content">Function</h4>
-                            <h4 class="about__experience-list-item-button-content">Period</h4>
+                            <h4 class="about__experience-list-item-button-content">Intern digital design at Stimmt</h4>
+                            <h4 class="about__experience-list-item-button-content">6 Months</h4>
                         </button>
                         <div class="about__experience-list-item-panel">
-                            <a class="about__experience-list-item-panel-link" href="#">
+                            <a class="about__experience-list-item-panel-link" href="https://stimmt.digital/" target="_blank">
                                 Website
                                 <div class="about__experience-list-item-panel-link-arrow">
-                                    <img src="./images/arrow-black.svg" alt="An arrow icon.">
+                                    <img src="./images/arrow-dark-grey.svg" alt="An arrow icon.">
                                 </div>
                             </a>
                             <p class="about__experience-list-item-panel-paragraph">
@@ -148,15 +147,14 @@
                     </li>
                     <li class="about__experience-list-item">
                         <button class="about__experience-list-item-button">
-                            <h4 class="about__experience-list-item-button-content">HvA</h4>
-                            <h4 class="about__experience-list-item-button-content">Function</h4>
-                            <h4 class="about__experience-list-item-button-content">Period</h4>
+                            <h4 class="about__experience-list-item-button-content">Intern branding and digital design at Nerds <span class="about__experience-list-item-button-content-ampersand">&</span> Company</h4>
+                            <h4 class="about__experience-list-item-button-content">6 Months</h4>
                         </button>
                         <div class="about__experience-list-item-panel">
-                            <a class="about__experience-list-item-panel-link" href="#">
+                            <a class="about__experience-list-item-panel-link" href="https://nerds.company/" target="_blank">
                                 Website
                                 <div class="about__experience-list-item-panel-link-arrow">
-                                    <img src="./images/arrow-black.svg" alt="An arrow icon.">
+                                    <img src="./images/arrow-dark-grey.svg" alt="An arrow icon.">
                                 </div>
                             </a>
                             <p class="about__experience-list-item-panel-paragraph">
@@ -166,15 +164,14 @@
                     </li>
                     <li class="about__experience-list-item">
                         <button class="about__experience-list-item-button">
-                            <h4 class="about__experience-list-item-button-content">Freelance</h4>
-                            <h4 class="about__experience-list-item-button-content">Function</h4>
-                            <h4 class="about__experience-list-item-button-content">Period</h4>
+                            <h4 class="about__experience-list-item-button-content">Freelance webdesigner and webdeveloper</h4>
+                            <h4 class="about__experience-list-item-button-content">1 Year</h4>
                         </button>
                         <div class="about__experience-list-item-panel">
                             <a class="about__experience-list-item-panel-link" href="#">
                                 Website
                                 <div class="about__experience-list-item-panel-link-arrow">
-                                    <img src="./images/arrow-black.svg" alt="An arrow icon.">
+                                    <img src="./images/arrow-dark-grey.svg" alt="An arrow icon.">
                                 </div>
                             </a>
                             <p class="about__experience-list-item-panel-paragraph">
@@ -186,35 +183,35 @@
             </div>
         </section>
 
-        <section class="work">
+        <section id="work" class="work">
             <h2 class="work__title">
                 Work
                 <span></span>
             </h2>
             <ul class="work__list">
                 <li class="work__list-item">
-                    <a class="work__list-item-link" href="#">
+                    <a class="work__list-item-link" href="product.html">
                         <!-- <img class="work__list-item-link-content" src="" alt=""> -->
                     </a>
                     <h3 class="work__list-item-title">Portfolio item title</h3>
                     <h4 class="work__list-item-discipline">Design . Development</h4>
                 </li>
                 <li class="work__list-item">
-                    <a class="work__list-item-link" href="#">
+                    <a class="work__list-item-link" href="product.html">
                         <!-- <img class="work__list-item-link-content" src="" alt=""> -->
                     </a>
                     <h3 class="work__list-item-title">Portfolio item title</h3>
                     <h4 class="work__list-item-discipline">Design . Development</h4>
                 </li>
                 <li class="work__list-item">
-                    <a class="work__list-item-link" href="#">
+                    <a class="work__list-item-link" href="product.html">
                         <!-- <img class="work__list-item-link-content" src="" alt=""> -->
                     </a>
                     <h3 class="work__list-item-title">Portfolio item title</h3>
                     <h4 class="work__list-item-discipline">Design . Development</h4>
                 </li>
                 <li class="work__list-item">
-                    <a class="work__list-item-link" href="#">
+                    <a class="work__list-item-link" href="product.html">
                         <!-- <img class="work__list-item-link-content" src="" alt=""> -->
                     </a>
                     <h3 class="work__list-item-title">Portfolio item title</h3>
@@ -223,49 +220,67 @@
             </ul>
         </section>
 
-        <section class="services">
+        <section id="services" class="services">
             <h2 class="services__title">Services</h2>
             <div class="services__description">
                 <h3 class="services__description-title">Ex deleniti architecto vel eveniet fugiat sed galisum vitae est quibusdam sint qui doloribus laudantium est iste voluptatem est similique voluptatibus!</h3>
             </div>
             <div class="services__container">
-                <article class="services__container-service">
-                    <h4 class="services__container-service-title">Design</h4>
-                    <ul class="services__container-service-list">
-                        <!-- <li class="services__container-service-list-item">HTML</li>
-                        <li class="services__container-service-list-item">HTML</li>
-                        <li class="services__container-service-list-item">HTML</li>
-                        <li class="services__container-service-list-item">HTML</li>
-                        <li class="services__container-service-list-item">HTML</li> -->
-                    </ul>
-                </article>
-                <article class="services__container-service">
-                    <h4 class="services__container-service-title">Development</h4>
-                    <ul class="services__container-service-list">
-                        <!-- <li class="services__container-service-list-item">HTML</li>
-                        <li class="services__container-service-list-item">HTML</li>
-                        <li class="services__container-service-list-item">HTML</li>
-                        <li class="services__container-service-list-item">HTML</li>
-                        <li class="services__container-service-list-item">HTML</li> -->
-                    </ul>
-                </article>
+                <ul class="services__container-list">
+                    <h4 class="services__container-list-title">Design</h4>
+                    <li class="services__container-list-item">
+                        <span class="services__container-list-item-content">Brand Design</span>
+                        <span class="services__container-list-item-content">001</span>
+                    </li>
+                    <li class="services__container-list-item">
+                        <span class="services__container-list-item-content">Concept Design</span>
+                        <span class="services__container-list-item-content">002</span>
+                    </li>
+                    <li class="services__container-list-item">
+                        <span class="services__container-list-item-content">Product Design</span>
+                        <span class="services__container-list-item-content">003</span>
+                    </li>
+                </ul>
+                <ul class="services__container-list">
+                    <h4 class="services__container-list-title">Development</h4>
+                    <li class="services__container-list-item">
+                        <span class="services__container-list-item-content">HTML</span>
+                        <span class="services__container-list-item-content">001</span>
+                    </li>
+                    <li class="services__container-list-item">
+                        <span class="services__container-list-item-content">CSS</span>
+                        <span class="services__container-list-item-content">002</span>
+                    </li>
+                    <li class="services__container-list-item">
+                        <span class="services__container-list-item-content">JavaScript</span>
+                        <span class="services__container-list-item-content">003</span>
+                    </li>
+                    <li class="services__container-list-item">
+                        <span class="services__container-list-item-content">React</span>
+                        <span class="services__container-list-item-content">004</span>
+                    </li>
+                    <li class="services__container-list-item">
+                        <span class="services__container-list-item-content">GSAP</span>
+                        <span class="services__container-list-item-content">005</span>
+                    </li>
+                </ul>
             </div>
         </section>
 
     </main>
 
-    <footer class="footer">
+    <footer id="contact" class="footer">
         <div class="footer__top">
             <nav class="footer__top-nav">
                 <ul class="footer__top-nav-list">
                     <li class="footer__top-nav-list-item">
-                        <a class="footer__top-nav-list-item-link" href="#">LinkedIn</a>
+                        <a class="footer__top-nav-list-item-link" href="https://nl.linkedin.com/in/lynn-wolters" target="_blank">LinkedIn</a>
                     </li>
                     <li class="footer__top-nav-list-item">
-                        <a class="footer__top-nav-list-item-link" href="#">GitHub</a>
+                        <a class="footer__top-nav-list-item-link" href="https://github.com/lynnwolters" target="_blank">GitHub</a>
                     </li>
                     <li class="footer__top-nav-list-item">
-                        <a class="footer__top-nav-list-item-link" href="#">Email</a>
+                        <a class="footer__top-nav-list-item-link" href="mailto:lynn.wolters27@gmail.com" target="_blank">Email</a>
                     </li>
                 </ul>
             </nav>
@@ -277,7 +292,7 @@
         <h3 class="footer__description">
             Ex deleniti architecto vel eveniet fugiat sed galisum <br> est quibusdam sint qui doloribus laudantium est <br> voluptatem est similique voluptatibus!
         </h3>
-        <a class="footer__link" href="#">
+        <a class="footer__link" href="mailto:lynn.wolters27@gmail.com" target="_blank">
             <h2 class="footer__link-title">Contact</h2>
             <img class="footer__link-arrow" src="./images/arrow.svg" alt="An arrow icon.">
         </a>

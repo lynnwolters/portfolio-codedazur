@@ -36,7 +36,7 @@
 }
 
 .nav__list-item {
-    padding: .8rem; 
+    padding: .75rem .8rem; 
 
     border-radius: var(--border-radius-l);
 

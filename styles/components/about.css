@@ -36,11 +36,26 @@
 
     font-size: var(--font-size-m);
     line-height: var(--line-height-120); 
-    color: var(--light-grey);
+    color: var(--dark-grey);
 }
 
 .about__experience-title {
+    display: grid;
+    grid-template-columns: var(--grid-template-columns);
+}
+
+.about__experience-title-content {
     font-size: var(--font-size-m);
+}
+
+.about__experience-title-content:nth-of-type(1) {
+    grid-column: 1/7;
+}
+
+.about__experience-title-content:nth-of-type(2) {
+    grid-column: 7/13;
+    
+    text-align: left;
 }
 
 .about__experience-list {
@@ -52,6 +67,7 @@
 
     display: grid;
     grid-template-columns: var(--grid-template-columns);
+    align-items: center;
 
     padding: var(--gap) 0;
 
@@ -61,40 +77,24 @@
     border-left: none;
 
     background-color: transparent;
-
-    font-size: var(--font-size-m);
-
-    transition: all .25 ease-in-out;
-}
-
-/* .about__experience-list-item:first-of-type .about__experience-list-item-button {
-    border-top: none;
-} */
-
-.about__experience-list-item:last-of-type .about__experience-list-item-button {
-    border-bottom: var(--border);
-}
-
-.about__experience-list-item-button:hover {
-    background-color: var(--light-grey);
 }
 
 .about__experience-list-item-button-content:nth-of-type(1) {
-    grid-column: 1/4;
+    grid-column: 1/7;
 
+    font-size: var(--font-size-s);
     text-align: left;
 }
 
 .about__experience-list-item-button-content:nth-of-type(2) {
-    grid-column: 7/9;
+    grid-column: 7/13;
 
+    font-size: var(--font-size-s);
     text-align: left;
 }
 
-.about__experience-list-item-button-content:nth-of-type(3) {
-    grid-column: 9/13;
-
-    text-align: right;
+.about__experience-list-item-button-content-ampersand {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .about__experience-list-item-panel {
@@ -109,12 +109,22 @@
 }
 
 .about__experience-list-item-panel-link {
-    grid-column: 1/6;
+    width: fit-content;
+    height: fit-content;
+
+    grid-column: 1/7;
     display: flex;
 
     margin: 1rem 0 2rem 0;
+    padding: .6rem .8rem;
+
+    border: var(--border);
+    border-radius: var(--border-radius-l);
+
+    background-color: var(--white);
 
     font-size: var(--font-size-s);
+    color: var(--dark-grey);
 }
 
 .about__experience-list-item-panel-link-arrow {
@@ -127,8 +137,7 @@
     margin: 1rem 0 2rem 0;
     
     font-size: var(--font-size-s);
-    line-height: var(--line-height-120);
-    text-align: justify;
-    color: var(--light-grey);
+    line-height: 130%;
+    color: var(--dark-grey);
 }
 
