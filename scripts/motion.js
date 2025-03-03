@@ -7,3 +7,21 @@ window.addEventListener('scroll', function() {
         nav.classList.remove('scrolled')
     }
 })
+
+document.querySelectorAll('.about__experience-list-item-button').forEach(function(button) {
+    button.addEventListener('click', function() {
+        const panel = button.nextElementSibling
+
+        document.querySelectorAll('.about__experience-list-item-panel').forEach(function(otherPanel) {
+            if (otherPanel !== panel) {
+                otherPanel.style.maxHeight = null
+            }
+        })
+
+        if (panel.style.maxHeight) {
+            panel.style.maxHeight = null
+        } else {
+            panel.style.maxHeight = panel.scrollHeight + 'px'
+        }
+    })
+})

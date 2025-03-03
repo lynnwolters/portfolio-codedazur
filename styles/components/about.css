@@ -1,7 +1,7 @@
 .about {
     grid-column: 2/12;
 
-    padding: var(--gap);
+    padding: var(--gap) 0;
 }
 
 .about__title {
@@ -47,17 +47,88 @@
     margin: 4rem 0 8rem 0;
 }
 
-.about__experience-list-item {
-    display: flex;
-    justify-content: space-between;
+.about__experience-list-item-button {
+    width: 100%;
+
+    display: grid;
+    grid-template-columns: var(--grid-template-columns);
 
     padding: var(--gap) 0;
 
     border-top: var(--border);
-}
+    border-right: none;
+    border-bottom: none;
+    border-left: none;
 
-.about__experience-list-item h4 {
+    background-color: transparent;
+
     font-size: var(--font-size-m);
+
+    transition: all .25 ease-in-out;
 }
 
+/* .about__experience-list-item:first-of-type .about__experience-list-item-button {
+    border-top: none;
+} */
+
+.about__experience-list-item:last-of-type .about__experience-list-item-button {
+    border-bottom: var(--border);
+}
+
+.about__experience-list-item-button:hover {
+    background-color: var(--light-grey);
+}
+
+.about__experience-list-item-button-content:nth-of-type(1) {
+    grid-column: 1/4;
+
+    text-align: left;
+}
+
+.about__experience-list-item-button-content:nth-of-type(2) {
+    grid-column: 7/9;
+
+    text-align: left;
+}
+
+.about__experience-list-item-button-content:nth-of-type(3) {
+    grid-column: 9/13;
+
+    text-align: right;
+}
+
+.about__experience-list-item-panel {
+    max-height: 0;
+
+    overflow: hidden;
+
+    display: grid;
+    grid-template-columns: var(--grid-template-columns);
+
+    transition: all .25s ease-in-out;
+}
+
+.about__experience-list-item-panel-link {
+    grid-column: 1/6;
+    display: flex;
+
+    margin: 1rem 0 2rem 0;
+
+    font-size: var(--font-size-s);
+}
+
+.about__experience-list-item-panel-link-arrow {
+    margin-left: .5rem;
+}
+
+.about__experience-list-item-panel-paragraph {
+    grid-column: 7/13;
+
+    margin: 1rem 0 2rem 0;
+    
+    font-size: var(--font-size-s);
+    line-height: var(--line-height-120);
+    text-align: justify;
+    color: var(--light-grey);
+}
 
